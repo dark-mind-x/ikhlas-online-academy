@@ -4,7 +4,7 @@
     display: flex;
     align-items: center; /* Vertically center content */
     justify-content: space-between;
-    padding: 80px 100px; /* Big spacing for a clean look */
+    padding: 40px 100px; /* Big spacing for a clean look */
     background-color: #f4f6f8; /* Very light grey background */
     min-height: 80vh; /* Takes up 80% of the screen height */
 }
