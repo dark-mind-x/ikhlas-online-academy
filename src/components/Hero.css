@@ -58,9 +58,10 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column-reverse; /* Stack image on top, text below */
-        padding: 40px 20px;
+        flex-direction: column-reverse; /* Image Top, Text Bottom */
+        padding: 40px 20px; /* Reduce padding significantly */
         text-align: center;
+        min-height: auto; /* Allow content to dictate height */
     }
 
     .hero-content {
@@ -69,6 +70,22 @@
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem; /* Reduce from 3.5rem to fit screen */
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 10px; /* Prevent text hitting edges */
+    }
+
+    .hero-image img {
+        max-width: 100%; /* Ensure image never overflows */
+        box-shadow: 10px 10px 0px #2D4059; /* Smaller shadow for mobile */
+    }
+    
+    .cta-btn {
+        width: 100%; /* Full width button is easier to tap */
+        max-width: 300px;
     }
 }
