@@ -1,0 +1,74 @@
+/* src/components/Hero.css */
+
+.hero-container {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between;
+    padding: 80px 100px; /* Big spacing for a clean look */
+    background-color: #f4f6f8; /* Very light grey background */
+    min-height: 80vh; /* Takes up 80% of the screen height */
+}
+
+/* Left Side: The Text */
+.hero-content {
+    max-width: 50%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem; /* Very large text */
+    color: #2D4059; /* Deep Blue */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* The "Call to Action" Button */
+.cta-btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #FFB400; /* Orange */
+    color: #2D4059;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 180, 0, 0.4); /* Glowing shadow */
+    transition: transform 0.2s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px); /* Moves up slightly on hover */
+}
+
+/* Right Side: The Image */
+.hero-image img {
+    width: 100%;
+    max-width: 500px; /* Limits size */
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #2D4059; /* A cool stylized shadow */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse; /* Stack image on top, text below */
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
