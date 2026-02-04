@@ -1,51 +1,92 @@
-/* src/components/Navbar.css */
-
 .navbar {
     display: flex;
-    justify-content: space-between; /* Pushes Logo to left, Button to right */
+    justify-content: space-between;
     align-items: center;
-    background-color: #2D4059; /* Deep Blue */
-    padding: 15px 50px;
+    background-color: #2D4059;
+    padding: 15px 50px; /* Desktop Padding */
     color: white;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 100;
 }
 
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: #FFB400; /* Orange Accent */
+    color: #FFB400;
     text-decoration: none;
 }
 
 .nav-links {
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
     font-size: 16px;
-    transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: #FFB400; /* Turns orange on hover */
+.menu-icon {
+    display: none; /* Hidden on Desktop */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
 }
+
+.desktop-btn { display: block; }
+.mobile-btn { display: none; }
 
 .login-btn {
     background-color: #FFB400;
     color: #2D4059;
     padding: 10px 25px;
     border: none;
-    border-radius: 25px; /* Pill shape */
+    border-radius: 25px;
     font-weight: 700;
     cursor: pointer;
-    transition: transform 0.2s;
 }
 
-.login-btn:hover {
-    transform: scale(1.05); /* Slightly grows when you hover */
+/* ================= MOBILE UI ================= */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px; /* Smaller padding */
+    }
+
+    .desktop-btn { display: none; } /* Hide big button */
+    .menu-icon { display: block; } /* Show Hamburger */
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh; /* Full screen height */
+        position: absolute;
+        top: 60px; /* Pushes it below the navbar */
+        left: -100%; /* Hides it off-screen to the left */
+        background-color: #2D4059;
+        transition: all 0.5s ease;
+        padding-top: 50px;
+        gap: 40px; /* Space between links */
+    }
+
+    /* When menu is active, slide it in */
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem; /* Bigger text for fingers */
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-btn {
+        display: block;
+        width: 80%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
 }
