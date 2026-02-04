@@ -157,13 +157,24 @@
 
     /* Make inputs taller for fingers */
     .input-group input {
-        padding: 15px; 
-        font-size: 16px; /* Prevents iPhone from zooming in automatically */
+        width: 350px;
+        padding: 10px 12px; /* Reduced from 15px to 10px (Top/Bottom) */
+        font-size: 16px; /* Keep 16px to prevent iPhone auto-zoom */
+        height: 35px; /* Force a consistent, smaller height */
+    }
+
+    .input-group {
+        margin-bottom: 15px; /* Reduce space between fields */
+    }
+
+    .input-group label {
+        margin-bottom: 5px; /* Bring label closer to input */
+        font-size: 0.85rem; /* Slightly smaller label text */
     }
 
     .login-submit-btn {
-        padding: 15px;
-        font-size: 1.1rem;
-        margin-top: 10px;
+        padding: 12px; /* Slightly compact button */
+        font-size: 1rem;
+        height: 45px; /* Match input height */
     }
 }
