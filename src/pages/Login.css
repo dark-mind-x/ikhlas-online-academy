@@ -157,7 +157,7 @@
 
     /* Make inputs taller for fingers */
     .input-group input {
-        width: 350px;
+        margin: 0 10px;
         padding: 10px 12px; /* Reduced from 15px to 10px (Top/Bottom) */
         font-size: 16px; /* Keep 16px to prevent iPhone auto-zoom */
         height: 35px; /* Force a consistent, smaller height */
