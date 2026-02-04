@@ -44,3 +44,16 @@
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .feature-card {
+        width: 100%; /* Use full width */
+        margin-bottom: 30px; /* Add space between cards */
+    }
+}
