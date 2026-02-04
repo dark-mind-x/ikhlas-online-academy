@@ -7,7 +7,7 @@ function NavBar () {
     return (
         <nav className="navbar">
             <Link to="/" className="logo">
-            Tutor<span style={{color: 'white'}}Pro></span>
+            Ikhlas<span style={{color: 'white'}}>Academy</span>
             </Link>
 
             <div className="nav-links">

@@ -1,0 +1,31 @@
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.feature-card {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Floats up on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature-card h3 {
+    color: #2D4059;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
