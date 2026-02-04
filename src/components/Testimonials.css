@@ -1,0 +1,68 @@
+/* src/components/Testimonials.css */
+
+.testimonials-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Light grey to separate sections */
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: #2D4059;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Wraps to next line on mobile */
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative; /* Needed for quote icon positioning */
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.quote-icon {
+    font-size: 30px;
+    color: #FFB400; /* Orange quote mark */
+    opacity: 0.3;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.review-text {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.stars {
+    color: #FFB400; /* Orange stars */
+    margin-bottom: 10px;
+}
+
+.client-info h4 {
+    color: #2D4059;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.client-info span {
+    color: #888;
+    font-size: 0.9rem;
+}
